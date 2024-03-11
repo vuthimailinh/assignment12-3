@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/0b16e4b722.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./signup.css">
+</head>
+<body>
+  <div class="all">
+    <div class="container">
+        <p style="font-size: 40px; font-weight: bold; margin-top: 5px; margin-bottom: 0; padding-left: 15px;">Sign Up</p>
+        <p style="margin: 0; padding-left: 15px; font-size: 20px;">It's quick and easy.</p>
+        <div class="info">
+            <div class="name">
+                <div class="first_name">
+                    <input type="text" name="first_name" id="first_name" placeholder="First Name">
+                    <div id="error" class="error_firstname"></div>
+                </div>
+                <div class="surname">
+                    <input type="text" name="surname" id="surname" placeholder="Surname">
+                    <div id="error_1" class="error_surname"></div>
+                </div>
+            </div>
+            <div class="phone" >
+                <input type="text" name="phone" id="phone" placeholder="Mobile number or email address">
+                <div id="error_2" class="error_phone"></div>
+            </div>
+            <div class="password">
+                <input type="text" name="password" id="password" placeholder="New password">
+                <div id="error_3" class="error_password"></div>
+            </div>
+        </div>
+        <div>
+            <p style="margin-left: 15px;">Date of birth <i class="fa-solid fa-circle-question" onclick="openQuestion()"></i></p>
+            <p class="question">Providing your birthday helps make sure that you get the right Facebook experience for your age. If you want to change who sees this, go to the About section of your profile. For more details, please visit our <a href="">Privacy Policy</a>.</p>
+            <div class="birthday">
+                <select name="day" id="day">
+                    <option value="">Day</option>
+                </select>
+                <select name="month" id="month">
+                    <option value="">Month</option>
+                </select>
+                <select name="year" id="year">
+                    <option value="">Year</option>
+                </select>
+                <div id="error_4" class="error_day"></div>
+            </div>
+        </div>
+        <div>
+            <p style="margin-left: 15px;">Gender <i class="fa-solid fa-circle-question" onclick="openQuestion1()"></i></p>
+            <p class="question1">You can change who sees your gender on your profile later. Select Custom to choose another gender, or if you'd rather not say.</p>
+            <div class="gender">
+                <span>
+                    <label for="female">Female</label>
+                    <input type="radio" name="female" id="female">
+                </span>
+                <span>
+                    <label for="male">Male</label>
+                    <input type="radio" name="male" id="male">
+                </span>
+                <span>
+                    <label for="custom">Custom</label>
+                    <input type="radio" name="custom" id="custom">
+                </span>
+            </div>
+        </div>
+        <div>
+            <p style="margin: 5px 15px;">People who use our service may have uploaded your contact information to Facebook. <a href=""> Learn more</a></p>
+            <p style="margin: 5px 15px;">By clicking Sign Up, your agree to our <a href=""> Terms</a>, <a href="">Privacy Policy</a> and <a href="">Cookies Policy</a>. You may receive SMS notifications from us and can opt out at any time.</p>
+        </div>
+        <div class="button"><button>Sign Up</button></div>
+      </div>
+  </div>
+  <script src="./signup.js"></script>
+</body>
+</html>
